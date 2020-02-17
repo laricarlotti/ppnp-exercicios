@@ -9,4 +9,7 @@
 valorReal = int(input("Digite o valor em reais"))
 taxaCambio = 4.18
 
-valorDolar = 
+valorDolar = valorReal * taxaCambio
+print(valorDolar)
+
+
