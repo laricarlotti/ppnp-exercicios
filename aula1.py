@@ -13,7 +13,7 @@ valorDolar = valorReal * taxaCambio
 print(valorDolar)
 
 
-# ex2 | saque no caixa eletrônico
+# ex2 | Saque no caixa eletrônico
 
 # Crie um programa que simule um saque feito no caixa
 # eletrônico. O programa deve solicitar ao usuário o número
@@ -37,3 +37,30 @@ if numeroConta == numeroBanco and senhaConta == senhaBanco:
   print(saldoFinal)
 else:
   print("Transação inválida")
+
+
+# ex3 | Sistema de empréstimo
+
+# Crie um programa que determine se um empréstimo é
+# aprovado baseado no perfil do usuário.
+# Para que um empréstimo seja aprovado, o usuário deve
+# ter entre 18 e 65 anos de idade, além de ter uma renda
+# mensal três vezes maior que uma parcela.
+# Nesse sistema, o usuário escolhe o valor desejado para
+# empréstimo e a quantidade de parcelas. O sistema não
+# cobra juros no empréstimo.
+
+
+idadeUsuario = int(input("Quantos anos você tem? "))
+rendaMensal = int(input("Quanto você ganha por mês? "))
+
+if idadeUsuario >= 18 and idadeUsuario <= 65:
+    valorDesejado = int(input("Qual valor deseja emprestado? "))
+    numeroParcelas = int(input("Em quantas parcelas gostaria de pegar o empréstimo? "))
+    umaParcela = valorDesejado / numeroParcelas
+    if rendaMensal >= 3* umaParcela:
+        print("Parabéns, o empréstimo foi aprovado")
+    else:
+        print("Você não atingiu valor de salário suficiente")
+else:
+    print("Você não se encaixa no perfil de idade")
