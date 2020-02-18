@@ -23,7 +23,7 @@ print(valorDolar)
 # o saque.
 # Por fim, ele deve mostrar o saldo atualizado na tela.
 
-numeroConta = int(input("Qual é o número da sua conta? "))
+numeroConta = input("Qual é o número da sua conta? ")
 senhaConta = input("Digite a sua senha ")
 valorSaque = int(input("Quanto você quer sacar? "))
 
