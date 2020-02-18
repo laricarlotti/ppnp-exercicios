@@ -27,7 +27,7 @@ numeroConta = int(input("Qual é o número da sua conta? "))
 senhaConta = input("Digite a sua senha ")
 valorSaque = int(input("Quanto você quer sacar? "))
 
-numeroBanco = 12345
+numeroBanco = "12345"
 senhaBanco = "abcde"
 saldoBanco = 15000
 
